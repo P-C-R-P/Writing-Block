@@ -1,0 +1,81 @@
+.container-4 {
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.header-section {
+  border-color: yellow;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5vh 10vh 5vh 10vh;
+}
+
+.header-section h2 {
+  text-align: center;
+  font-size: 40px;
+  border-style: solid;
+  border-color: orange;
+  border-width: 1px;
+}
+
+.filter-options ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-options ul div {
+  margin: 2vh;
+  font-size: 20px;
+}
+
+.list-section {
+  border-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: scroll;
+  padding: 2vw;
+}
+
+.list-item {
+  position: relative;
+  border-color: green;
+  border-style: solid;
+  border-width: 1px;
+  margin: 2vh 20vw 2vh 20vw;
+  padding: 5vw;
+}
+
+.list-item button {
+  position: absolute;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 2vh;
+}
+
+.delete {
+  right: 2vh;
+  top: 2vh;
+}
+
+.use {
+  left: 2vh;
+  top: 2vh;
+}
+
+.return {
+  position: absolute;
+  left: 5vh;
+  bottom: 5vh;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 5vh;
+}

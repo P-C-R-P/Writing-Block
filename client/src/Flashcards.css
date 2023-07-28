@@ -1,0 +1,66 @@
+.container-3 {
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.flashcard-section {
+  border-color: yellow;
+  border-style: solid;
+  border-width: 1px;
+  margin: 20vh 5vw 20vh 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.flashcard-section button {
+  display: flex;
+  align-self: center;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 5vh;
+}
+
+.flashcard {
+  position: relative;
+  border-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10vh 5vw 10vh 5vw;
+  height: 40vh;
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  z-index: 1;
+}
+
+.flashcard button {
+  position: absolute;
+  padding: 2vw;
+}
+
+.flashcard h2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  margin: 1vh;
+}
+
+.return {
+  position: absolute;
+  left: 5vh;
+  bottom: 5vh;
+}
+
+.tilted-card {
+  border-color: purple;
+  position: absolute;
+  transform: rotate(6deg);
+  z-index: -1;
+}

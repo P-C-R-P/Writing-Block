@@ -8,12 +8,13 @@ const cors = require('@koa/cors');
 // cors?
 
 // const static = require('koa-static');
+// send = require('koa-send');
 
 const application = new Koa();
 
 const router = require('./router.js');
 
-const PORT = 3000;
+const PORT = 3001;
 
 application.use(cors());
 
@@ -24,5 +25,5 @@ application.use(router.routes());
 // application.use(static());
 
 application.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${3000}.`);
+  console.log(`Server listening at http://localhost:${PORT}.`);
 });

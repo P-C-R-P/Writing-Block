@@ -1,6 +1,6 @@
 import './Prompts.css';
 import { BiArrowBack, BiExport } from 'react-icons/bi';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   BsBookmark,
   BsBookmarkFill,

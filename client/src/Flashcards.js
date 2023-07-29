@@ -1,6 +1,6 @@
 import './Flashcards.css';
 import { BiArrowBack } from 'react-icons/bi';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   BsCheckLg,
   BsArrowClockwise,
@@ -11,6 +11,19 @@ import {
 
 function Flashcards({ onClose }) {
   const [hasBookmark, setHasBookmark] = useState(false);
+  const [title, setTitle] = useState([]);
+  const [author, setAuthor] = useState([]);
+  const [lines, setLines] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/poetrydb')
+      .then((response) => response.json())
+      .then((data) => {
+        setTitle(data.title);
+        setAuthor(data.author);
+        setLines(data.lines);
+      });
+  }, []);
 
   function handleSave() {
     setHasBookmark((current) => !current);
@@ -29,7 +42,17 @@ function Flashcards({ onClose }) {
           <button onClick={handleSave} className="save-2">
             {hasBookmark ? <BsBookmarkFill /> : <BsBookmark />}
           </button>
-          <h2>Flashcards contents</h2>
+          <div className="poem-div">
+            <h2 className="title">{title}</h2>
+            <h3 className="author">{author}</h3>
+            <div className="lines-div">
+              {lines.map((line, index) => (
+                <p key={index} className="line">
+                  {line}
+                </p>
+              ))}
+            </div>
+          </div>
           <button className="choose-2">
             <BsCheckLg />
           </button>

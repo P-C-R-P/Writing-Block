@@ -73,7 +73,7 @@ function Editor() {
           <button onClick={handleTypewriter} className="typewriter">
             {typeSound ? <BsKeyboardFill/> : <BsKeyboard />}
           </button>
-          <h3>Characters: {dataLength} / 5000</h3>
+          <h3>{dataLength} / 5000</h3>
         </div>
       </div>
     </>

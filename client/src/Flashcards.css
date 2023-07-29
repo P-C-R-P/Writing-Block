@@ -24,7 +24,6 @@
 
 .flashcard-section button {
   display: flex;
-  align-self: center;
   border-style: none;
   background-color: transparent;
   font-size: 45px;
@@ -51,7 +50,6 @@
   margin: 10vh 5vw 10vh 5vw;
   height: 50vh;
   width: 50vw;
-  text-align: center;
   display: flex;
   z-index: 2;
   overflow-y: scroll;
@@ -63,7 +61,7 @@
 }
 
 .flashcard button {
-  position: absolute;
+  position: sticky;
   padding: 2vw;
 }
 
@@ -99,4 +97,37 @@
 .choose-2 {
   top: 1vh;
   right: 1vh;
+}
+
+.title {
+  text-align: center;
+  /* border-style: solid; */
+}
+
+.author {
+  padding: 0vh 2vh 0vh 2vh;
+  text-align: center;
+  /* border-style: solid; */
+}
+
+.lines-div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0vh 0vh 0vh 2vh;
+  width: 75%;
+  /* border-style: solid; */
+}
+.line {
+  /* border-style: solid; */
+  margin: 1vh;
+  display: flex;
+}
+
+.poem-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10vh 0vh 0vh 0vh;
 }

@@ -13,14 +13,14 @@
   height: 100%;
 }
 
-.header-section {
-  border-color: rgba(0, 5, 27, 1);
+.header-section-2 {
+  border-color: #00051b;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
-  margin: 5vh 10vh 0vh 10vh;
+  margin: 10vh 10vh 2vw 10vh;
 }
 
-.header-section h2 {
+.header-section-2 h2 {
   text-align: center;
   font-size: 40px;
   border-style: none;
@@ -29,19 +29,21 @@
   border-width: 1px; */
 }
 
-.filter-options ul {
+.filter-options-2 ul {
+
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.filter-options ul div {
+.filter-options-2 ul div {
   margin: 2vh;
   font-size: 20px;
   cursor: pointer;
 }
 
-.list-section {
+.list-section-2 {
   /* border-color: rgba(0, 5, 27, 1);
   border-style: solid;
   border-width: 5px 0px 0px 0px; */
@@ -51,11 +53,15 @@
   overflow-y: scroll;
 }
 
-.list-item {
+.list-item-2 {
   box-shadow: 10px 10px 10px rgb(150, 150, 150);
   position: relative;
   border-style: none;
-  background-color: #92a6ff;
+  background: linear-gradient(
+    335deg,
+    rgba(209, 170, 0, 1) 0%,
+    rgba(209, 170, 0, 0.4982725512079832) 100%
+  );
   border-radius: 10px;
   /* border-color: green;
   border-style: solid;
@@ -64,26 +70,45 @@
   padding: 5vh 5vh 5vh 10vh;
 }
 
-.list-item:hover {
-  transition: box-shadow 1s;
+.list-item-2:hover {
+  transition: box-shadow 1s, background-color 1s;
   box-shadow: 10px 10px 10px rgb(80, 80, 80);
+  background-color: rgba(209, 170, 0, 1);
 }
 
-.list-item button {
+.list-item-2 button {
   position: absolute;
-  border-radius: 100%;
+  background-color: transparent;
+  border-style: none;
+  font-size: 30px;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-style: solid;
   border-color: black;
-  border-width: 1px;
-  padding: 2vh;
+  border-width: 1px; */
 }
 
-.view {
+.view-2 {
   right: 2vh;
   top: 2vh;
 }
 
-.like {
+.like-2 {
   left: 2vh;
   top: 2vh;
+}
+
+.return-2 {
+  position: absolute;
+  left: 5vh;
+  bottom: 5vh;
+  background-color: transparent;
+  border-style: none;
+  font-size: 50px;
+  cursor: pointer;
+  /* border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 5vh; */
 }

@@ -1,69 +1,90 @@
 .container-2 {
+  color: #00051b;
   background: linear-gradient(
     335deg,
     rgba(225, 225, 191, 1) 0%,
     rgba(238, 238, 221, 1) 100%
   );
-  border-color: red;
+  /* border-color: red;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  height: 100vh;
 }
 
 .prompt-section {
   display: flex;
-  justify-content: space-evenly;
-  margin: 1vh 20vw 0vh 20vw;
-  border-color: yellow;
+  justify-content: center;
+  margin: 5vh 20vw 0vh 20vw;
+  /* border-color: yellow;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
 }
 
 .prompt-section button {
-  border-radius: 100%;
+  border-style: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  padding: 2vh;
+  padding: 2vh; */
 }
 
 .prompt {
+  box-shadow: 10px 10px 10px rgb(150, 150, 150);
   position: relative;
-  border-color: green;
+  background: linear-gradient(
+    335deg,
+    rgba(255, 151, 171, 1) 0%,
+    rgba(255, 151, 171, 0.5) 100%
+  );
+  border-radius: 10px;
+  /* border-color: green;
   border-style: solid;
-  border-width: 1px;
-  margin: 5vh;
+  border-width: 1px; */
+  margin: 5vh 5vh 5vh 5vh;
   width: 30vw;
   height: 20vh;
   display: flex;
-  padding: 0vh 1vw 0vh 1vw;
+  padding: 0vh 1vw 0vh 2vw;
+  overflow-y: scroll;
+}
+
+.prompt:hover {
+  transition: box-shadow 1s, background-color 1s;
+  box-shadow: 10px 10px 10px rgb(80, 80, 80);
+  background-color: rgba(255, 151, 171, 1);
 }
 
 .prompt h2 {
   font-size: 20px;
   align-self: center;
-  border-color: orange;
+  /* border-color: orange;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   width: 100%;
 }
 
 .prompt button {
   position: absolute;
+  font-size: 25px;
 }
 
-.save {
+.save-1 {
   bottom: 1vh;
-  left: 1vh;
+  left: 2vh;
 }
 
-.choose {
+.choose-1 {
   bottom: 1vh;
-  right: 1vh;
+  right: 2vh;
 }
 
 .back-arrow {
@@ -77,29 +98,51 @@
 }
 
 .text-section {
-  border-color: blue;
+  box-shadow: 10px 10px 10px rgb(150, 150, 150);
+  /* border-color: blue;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 0vh 10vw 10vh 10vw;
+  background: linear-gradient(
+    335deg,
+    rgba(161, 0, 30, 1) 0%,
+    rgba(161, 0, 30, 0.4982725512079832) 100%
+  );
+}
+
+.text-section:hover {
+  transition: box-shadow 1s, background-color 1s;
+  box-shadow: 10px 10px 10px rgb(80, 80, 80);
+  background-color: rgba(161, 0, 30, 1);
 }
 
 .text-area {
-  border-color: purple;
+  /* border-color: purple;
   border-style: solid;
-  border-width: 1px;
-  margin: 0vh 5vh 0vh 5vh;
+  border-width: 1px; */
+  margin: 5vh 5vh 5vw 5vh;
   position: relative;
 }
 
 .text-area textarea {
+  border-radius: 10px;
+  border-style: none;
   width: 100%;
   height: 50vh;
   overflow-y: scroll;
   resize: none;
   box-sizing: border-box;
   display: flex;
+  background-color: rgba(238, 238, 221, 1);
+  padding: 2vh;
+  font-size: 25px;
+}
+
+.text-area textarea:focus {
+  outline: none;
 }
 
 .text-buttons {
@@ -110,22 +153,15 @@
 }
 
 .text-buttons button {
-  margin: 1vh;
-  padding: 2vh;
-  border-radius: 100%;
+  margin: 1vh 1vw 1vh 1vw;
+  border-style: none;
+  font-size: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-color: black;
   border-style: solid;
-  border-width: 1px;
-}
-
-.words {
-  position: absolute;
-  bottom: 1vh;
-  right: 2vh;
-}
-
-.words h3 {
-  font-size: 10px;
+  border-width: 1px; */
 }
 
 .options-section {
@@ -134,10 +170,23 @@
 }
 
 .options-section button {
-  margin: 2vh;
-  padding: 2vw;
-  border-radius: 100%;
+  margin: 3vh 5vw 2vw 2vw;
+  border-style: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-color: black;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
+}
+
+.return {
+  position: absolute;
+  left: 2vw;
+  bottom: 5vh;
+  background-color: transparent;
+  border-style: none;
+  font-size: 50px;
+  cursor: pointer;
 }

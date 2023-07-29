@@ -9,13 +9,13 @@
   border-width: 1px; */
   display: flex;
   justify-content: space-around;
-  padding-bottom: 5vh;
   height: 95vh;
   width: 100%;
+  padding: 2vh 0vh 5vh 0vh;
 }
 
 .block-section {
-  margin: 10vh 10vh 15vh 10vh;
+  margin: 10vh 10vh 15vh 5vh;
   padding: 5vh;
   /* border-color: yellow;
   border-style: solid;
@@ -63,7 +63,7 @@
 }
 
 .side-menu-section {
-  margin: 5vh 10vh 5vh 0vh;
+  margin: 5vh 15vh 5vh 0vh;
   border-radius: 25px;
   padding: 1vh;
   text-align: center;

@@ -82,7 +82,7 @@ function Home() {
           </button>
         </div>
         <div className="side-menu-section">
-          <h2>Submitted stories</h2>
+          <h2>Recent stories</h2>
         </div>
       </div>
     </>

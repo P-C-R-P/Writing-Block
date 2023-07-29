@@ -4,87 +4,104 @@
     rgba(225, 225, 191, 1) 0%,
     rgba(238, 238, 221, 1) 100%
   );
-  border-color: red;
+  /* border-color: red;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   height: 100vh;
   width: 100%;
   position: absolute;
 }
 
-.header-section {
-  border-color: yellow;
+.header-section-1 {
+  border-color: #00051b;
   border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  margin: 5vh 10vh 5vh 10vh;
+  padding: 0vh 0vh 2% 0vh;
+  border-width: 0px 0px 2px 0px;
+  margin: 10vh 10vh 5vh 10vh;
 }
 
-.header-section h2 {
+.header-section-1 h2 {
   text-align: center;
   font-size: 40px;
-  border-style: solid;
+  /* border-style: solid;
   border-color: orange;
-  border-width: 1px;
+  border-width: 1px; */
 }
 
-.filter-options ul {
+.filter-options-1 ul {
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-.filter-options ul div {
+.filter-options-1 ul div {
   margin: 2vh;
   font-size: 20px;
   cursor: pointer;
 }
 
-.list-section {
-  border-color: pink;
+.list-section-1 {
+  /* border-color: pink;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   display: flex;
   flex-direction: column;
   height: 70vh;
   overflow-y: scroll;
-  padding: 2vw;
+  padding: 1vw 5vh 1vw 5vh;
 }
 
-.list-item {
+.list-item-1 {
+  box-shadow: 10px 10px 10px rgb(150, 150, 150);
   position: relative;
-  border-color: green;
+  border-radius: 10px;
+  background: linear-gradient(
+    335deg,
+    rgba(94, 124, 255, 1) 0%,
+    rgba(94, 124, 255, 0.5) 100%
+  );
+  /* border-color: green;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   margin: 2vh 20vw 2vh 20vw;
   padding: 5vw;
 }
 
-.list-item button {
+.list-item-1:hover {
+  transition: box-shadow 1s, background-color 1s;
+  box-shadow: 10px 10px 10px rgb(80, 80, 80);
+  background-color: rgba(94, 124, 255, 1);
+}
+
+.list-item-1 button {
   position: absolute;
-  border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  padding: 2vh;
+  background-color: transparent;
+  border-style: none;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-.delete {
-  right: 2vh;
-  top: 2vh;
+.delete-1 {
+  right: 2vw;
+  top: 2vw;
 }
 
-.use {
-  left: 2vh;
-  top: 2vh;
+.use-1 {
+  left: 2vw;
+  top: 2vw;
 }
 
-.return {
+.return-1 {
   position: absolute;
   left: 5vh;
   bottom: 5vh;
-  border-radius: 100%;
+  background-color: transparent;
+  border-style: none;
+  font-size: 50px;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  padding: 5vh;
+  padding: 5vh; */
 }

@@ -7,17 +7,17 @@
   );
   width: 100%;
   position: absolute;
-  border-color: red;
+  /* border-color: red;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   z-index: 0;
 }
 
 .flashcard-section {
-  border-color: yellow;
+  /* border-color: yellow;
   border-style: solid;
-  border-width: 1px;
-  margin: 20vh 5vw 20vh 5vw;
+  border-width: 1px; */
+  margin: 15vh 5vw 15vh 5vw;
   display: flex;
   justify-content: center;
 }
@@ -25,24 +25,41 @@
 .flashcard-section button {
   display: flex;
   align-self: center;
-  border-radius: 100%;
+  border-style: none;
+  background-color: transparent;
+  font-size: 45px;
+  cursor: pointer;
+  /* border-radius: 100%;
   border-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: 1px; */
   padding: 5vh;
 }
 
 .flashcard {
+  box-shadow: 10px 10px 10px #62865a;
   position: relative;
-  border-color: pink;
+  /* border-color: pink;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
+  border-radius: 10px;
+  background: linear-gradient(
+    335deg,
+    rgba(122, 255, 92, 1) 0%,
+    rgba(122, 255, 92, 0.5) 100%
+  );
   margin: 10vh 5vw 10vh 5vw;
-  height: 40vh;
+  height: 50vh;
   width: 50vw;
   text-align: center;
   display: flex;
   z-index: 2;
+  overflow-y: scroll;
+}
+
+.flashcard:hover {
+  transition: box-shadow 1s;
+  box-shadow: 10px 10px 10px #40573b;
 }
 
 .flashcard button {
@@ -54,9 +71,9 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  border-color: pink;
+  /* border-color: pink;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   width: 100%;
   margin: 1vh;
 }
@@ -68,8 +85,18 @@
 }
 
 .tilted-card {
-  border-color: purple;
+  /* border-color: purple; */
   position: absolute;
   transform: rotate(6deg);
   z-index: 1;
+}
+
+.save-2 {
+  top: 1vh;
+  left: 1vh;
+}
+
+.choose-2 {
+  top: 1vh;
+  right: 1vh;
 }

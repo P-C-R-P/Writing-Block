@@ -1,6 +1,9 @@
 import './Prompts.css';
 
-function Prompts() {
+function Prompts({onClose}) {
+  function handleClose() {
+    onClose();
+  }
   return (
     <div className="container-2">
       <div className="prompt-section">
@@ -27,7 +30,7 @@ function Prompts() {
           </div>
         </div>
         <div className="options-section">
-          <button className="return"></button>
+          <button onClick={handleClose} className="return"></button>
           <div className="options">
             <button className="submit"></button>
             <button className="export"></button>

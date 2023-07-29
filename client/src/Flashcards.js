@@ -1,6 +1,9 @@
 import './Flashcards.css';
 
-function Flashcards() {
+function Flashcards({ onClose }) {
+  function handleClose() {
+    onClose();
+  }
   return (
     <div className="container-3">
       <div className="flashcard-section">
@@ -12,7 +15,7 @@ function Flashcards() {
         </div>
         <div className="flashcard tilted-card"></div>
         <button className="forward-arrow"></button>
-        <button className="return"></button>
+        <button onClick={handleClose} className="return"></button>
       </div>
     </div>
   );

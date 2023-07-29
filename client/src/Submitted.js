@@ -1,6 +1,9 @@
 import './Submitted.css';
 
-function Submitted() {
+function Submitted({ onClose }) {
+  function handleClose() {
+    onClose();
+  }
   return (
     <div className="container-5">
       <div className="header-section">
@@ -20,11 +23,11 @@ function Submitted() {
       </div>
       <div className="list-section">
         <div className="list-item">
-          <button className="like"></button>
-          <h3>This element is one of the prompts.</h3>
-          <button className="view"></button>
+          <button className="like">Li</button>
+          <h3>This element is one of the submissions.</h3>
+          <button className="view">Vi</button>
         </div>
-        <button className="return"></button>
+        <button onClick={handleClose} className="return">Ba</button>
         {/* <div className="list-item">
           <button className="like"></button>
           <h3>This element is one of the prompts.</h3>

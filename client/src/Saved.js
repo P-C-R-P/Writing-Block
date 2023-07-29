@@ -1,6 +1,9 @@
 import './Saved.css';
 
-function Saved() {
+function Saved({onClose}) {
+  function handleClose() {
+    onClose();
+  }
   return (
     <div className="container-4">
       <div className="header-section">
@@ -12,7 +15,7 @@ function Saved() {
           <h3>This element is one of the prompts.</h3>
           <button className="use"></button>
         </div>
-        <button className="return"></button>
+        <button onClick={handleClose} className="return"></button>
         {/* <div className="list-item">
           <button className="delete"></button>
           <h3>This element is one of the prompts.</h3>

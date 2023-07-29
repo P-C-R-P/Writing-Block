@@ -1,16 +1,23 @@
 .container-2 {
+  background: linear-gradient(
+    335deg,
+    rgba(225, 225, 191, 1) 0%,
+    rgba(238, 238, 221, 1) 100%
+  );
   border-color: red;
   border-style: solid;
   border-width: 1px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 .prompt-section {
   display: flex;
   justify-content: space-evenly;
-  margin: 5vh 20vw 0vh 20vw;
+  margin: 1vh 20vw 0vh 20vw;
   border-color: yellow;
   border-style: solid;
   border-width: 1px;
@@ -123,7 +130,7 @@
 
 .options-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .options-section button {

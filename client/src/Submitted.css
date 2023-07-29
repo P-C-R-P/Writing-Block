@@ -1,23 +1,32 @@
-.container-4 {
-  position: absolute;
-  border-color: red;
+.container-5 {
+  color: #00051b;
+  background: linear-gradient(
+    335deg,
+    rgba(225, 225, 191, 1) 0%,
+    rgba(238, 238, 221, 1) 100%
+  );
+  /* border-color: red;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
+  width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 .header-section {
-  border-color: yellow;
+  border-color: rgba(0, 5, 27, 1);
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px 0px 2px 0px;
   margin: 5vh 10vh 0vh 10vh;
 }
 
 .header-section h2 {
   text-align: center;
   font-size: 40px;
-  border-style: solid;
-  border-color: orange;
-  border-width: 1px;
+  border-style: none;
+  /* border-style: solid;
+  border-color: #ffa500;
+  border-width: 1px; */
 }
 
 .filter-options ul {
@@ -29,12 +38,13 @@
 .filter-options ul div {
   margin: 2vh;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .list-section {
-  border-color: pink;
+  /* border-color: rgba(0, 5, 27, 1);
   border-style: solid;
-  border-width: 1px;
+  border-width: 5px 0px 0px 0px; */
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -42,12 +52,21 @@
 }
 
 .list-item {
+  box-shadow: 10px 10px 10px rgb(150, 150, 150);
   position: relative;
-  border-color: green;
+  border-style: none;
+  background-color: #92a6ff;
+  border-radius: 10px;
+  /* border-color: green;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   margin: 2vh 20vw 2vh 20vw;
-  padding: 5vh;
+  padding: 5vh 5vh 5vh 10vh;
+}
+
+.list-item:hover {
+  transition: box-shadow 1s;
+  box-shadow: 10px 10px 10px rgb(80, 80, 80);
 }
 
 .list-item button {
@@ -68,4 +87,3 @@
   left: 2vh;
   top: 2vh;
 }
-

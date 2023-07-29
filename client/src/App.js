@@ -9,7 +9,7 @@ import Submitted from './Submitted';
 function App() {
   return (
     <>
-      <Flashcards />
+      <Home />
     </>
   );
 }

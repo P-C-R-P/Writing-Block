@@ -41,4 +41,4 @@ async function randomPoem() {
   return poem;
 }
 
-randomPoem();
+module.exports = randomPoem;

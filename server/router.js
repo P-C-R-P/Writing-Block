@@ -6,6 +6,8 @@ const prompt = require('./controllers/prompts.js');
 
 const submission = require('./controllers/submissions.js');
 
+const getPoem = require('./controllers/apis.js');
+
 const home = require('./controllers/home.js')
 
 router.get('/', home);
@@ -19,6 +21,8 @@ router.delete('/prompts/:id', prompt.deletePrompt);
 router.get('/submissions', submission.getSubmissions);
 
 router.post('/submissions', submission.postSubmission);
+
+router.get('/poetrydb', getPoem);
 
 // path for deleting submissions?
 

@@ -12,14 +12,12 @@ async function getSubmissions(ctx) {
 async function postSubmission(ctx) {
   try {
     const submissionData = ctx.request.body;
-    console.log(submissionData);
     const newSubmission = await submission.create({
       title: submissionData.title,
       text: submissionData.text,
       savedDate: Date.now()
     });
     ctx.body = newSubmission;
-    console.log(newSubmission);
     ctx.status = 201;
   } catch (error) {
     ctx.status = 500;

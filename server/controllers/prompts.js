@@ -12,7 +12,6 @@ async function getPrompts(ctx) {
 async function postPrompt(ctx) {
   try {
     const promptData = ctx.request.body;
-    // console.log(promptData);
     const newPrompt = await prompt.create({
       title: promptData.title,
       text: promptData.text,
@@ -20,7 +19,6 @@ async function postPrompt(ctx) {
       savedDate: Date.now()
     });
     ctx.body = newPrompt;
-    console.log(newPrompt);
     ctx.status = 201;
   } catch (error) {
     ctx.status = 500;

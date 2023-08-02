@@ -37,7 +37,6 @@ async function randomPoem() {
     title = await randomTitle(titlesArray);
     poem = await fetchPoem(title);
   }
-  console.log(poem);
   return poem;
 }
 

@@ -30,8 +30,4 @@ router.get('/sentence', apis.getSentence);
 
 router.get('/quotation', apis.getQuote);
 
-// path for deleting submissions?
-
-// path for editing submissions?
-
 module.exports = router;

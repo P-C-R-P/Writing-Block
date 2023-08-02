@@ -12,21 +12,18 @@ async function getSubmissions(ctx) {
 async function postSubmission(ctx) {
   try {
     const submissionData = ctx.request.body;
+    console.log(submissionData);
     const newSubmission = await submission.create({
       title: submissionData.title,
       text: submissionData.text,
-      author: submissionData.author,
-      savedDate: submissionData.savedDate,
+      savedDate: Date.now()
     });
     ctx.body = newSubmission;
+    console.log(newSubmission);
     ctx.status = 201;
   } catch (error) {
     ctx.status = 500;
   }
 }
-
-// deleteSubmission (do I need this?)
-
-// editSubmission (need to consider how to do this...)
 
 module.exports = { getSubmissions, postSubmission };

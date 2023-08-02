@@ -6,7 +6,7 @@ const prompt = require('./controllers/prompts.js');
 
 const submission = require('./controllers/submissions.js');
 
-const getPoem = require('./controllers/apis.js');
+const apis = require('./controllers/apis.js');
 
 const home = require('./controllers/home.js')
 
@@ -22,7 +22,13 @@ router.get('/submissions', submission.getSubmissions);
 
 router.post('/submissions', submission.postSubmission);
 
-router.get('/poetrydb', getPoem);
+router.get('/poetry', apis.getPoem);
+
+router.get('/idea', apis.getIdea);
+
+router.get('/sentence', apis.getSentence);
+
+router.get('/quotation', apis.getQuote);
 
 // path for deleting submissions?
 

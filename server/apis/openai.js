@@ -1,4 +1,4 @@
-const API_KEY = '';
+const API_KEY = process.env.API_KEY;
 const API_URL = 'https://api.openai.com/v1/completions';
 
 async function fetchSentence() {
@@ -19,6 +19,7 @@ async function fetchSentence() {
   const output = data.choices;
   const textOutput = output[0].text.replace(/\n/g, '').replace(/\.$/, '') + '...';
   console.log(textOutput);
+  return textOutput;
 }
 
 async function fetchIdea() {
@@ -38,7 +39,7 @@ async function fetchIdea() {
   const output = data.choices;
   const textOutput = output[0].text.replace(/\n/g, '').replace(/\.$/, '') + '...';
   console.log(textOutput);
+  return textOutput;
 }
 
-fetchSentence();
-fetchIdea();
+module.exports = { fetchIdea, fetchSentence };

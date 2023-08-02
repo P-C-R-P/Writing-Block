@@ -24,6 +24,7 @@
   text-align: center;
   font-size: 40px;
   border-style: none;
+  margin: 0vh 0vh 4vw 0vh;
   /* border-style: solid;
   border-color: #ffa500;
   border-width: 1px; */
@@ -106,6 +107,41 @@
   border-style: none;
   font-size: 50px;
   cursor: pointer;
+  /* border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 5vh; */
+}
+
+.view-section {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 5vh 5vh 5vh 5vh;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(238, 238, 221, 1);
+
+  border-style: solid;
+
+}
+
+.view-section h3 {
+  display: flex;
+}
+
+.return-3 {
+  position: absolute;
+  right: 4vh;
+  top: 2vh;
+  background-color: transparent;
+  border-style: none;
+  font-size: 50px;
+  cursor: pointer;
+  transform: rotate(180deg);
   /* border-radius: 100%;
   border-style: solid;
   border-color: black;

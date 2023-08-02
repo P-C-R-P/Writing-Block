@@ -1,23 +1,34 @@
 import './Home.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-import Flashcards from './Flashcards';
-import Prompts from './Prompts';
+import FlashcardsPoetry from './FlashcardsPoetry';
+import FlashcardsQuotations from './FlashcardsQuotations';
+import PromptsStory from './PromptsStory';
+import PromptsSentence from './PromptsSentence';
 import Saved from './Saved';
 import Submitted from './Submitted';
 
 function Home() {
-  const [isPromptsShown, setIsPromptsShown] = useState(false);
-  const [isFlashcardsShown, setIsFlashcardsShown] = useState(false);
+  const [isPromptsStoryShown, setIsPromptsStoryShown] = useState(false);
+  const [isPromptsSentenceShown, setIsPromptsSentenceShown] = useState(false);
+  const [isFlashcardsPoetryShown, setIsFlashcardsPoetryShown] = useState(false);
+  const [isFlashcardsQuotationsShown, setIsFlashcardsQuotationsShown] =
+    useState(false);
   const [isSavedShown, setIsSavedShown] = useState(false);
   const [isSubmittedShown, setIsSubmittedShown] = useState(false);
   function handleButtonClick(event) {
     const value = event.target.value;
-    if (value === 'sentence' || value === 'story') {
-      setIsPromptsShown(true);
+    if (value === 'sentence') {
+      setIsPromptsSentenceShown(true);
     }
-    if (value === 'poetry' || value === 'quotation') {
-      setIsFlashcardsShown(true);
+    if (value === 'story') {
+      setIsPromptsStoryShown(true);
+    }
+    if (value === 'poetry') {
+      setIsFlashcardsPoetryShown(true);
+    }
+    if (value === 'quotation') {
+      setIsFlashcardsQuotationsShown(true);
     }
     if (value === 'saved') {
       setIsSavedShown(true);
@@ -32,16 +43,22 @@ function Home() {
     button.click();
   }
   function handleClose(event) {
-    setIsPromptsShown(false);
-    setIsFlashcardsShown(false);
+    setIsPromptsStoryShown(false);
+    setIsPromptsSentenceShown(false);
+    setIsFlashcardsPoetryShown(false);
     setIsSavedShown(false);
     setIsSubmittedShown(false);
+    setIsFlashcardsQuotationsShown(false);
   }
 
   return (
     <>
-      {isPromptsShown && <Prompts onClose={handleClose} />}
-      {isFlashcardsShown && <Flashcards onClose={handleClose} />}
+      {isPromptsStoryShown && <PromptsStory onClose={handleClose} />}
+      {isPromptsSentenceShown && <PromptsSentence onClose={handleClose} />}
+      {isFlashcardsPoetryShown && <FlashcardsPoetry onClose={handleClose} />}
+      {isFlashcardsQuotationsShown && (
+        <FlashcardsQuotations onClose={handleClose} />
+      )}
       {isSavedShown && <Saved onClose={handleClose} />}
       {isSubmittedShown && <Submitted onClose={handleClose} />}
       <div className="container-1">
@@ -78,12 +95,12 @@ function Home() {
             value="submitted"
             className="block submissions"
           >
-            <h2 onClick={handleTextClick}>View submitted stories</h2>
+            <h2 onClick={handleTextClick}>View submitted work</h2>
           </button>
         </div>
-        <div className="side-menu-section">
+        {/* <div className="side-menu-section">
           <h2>Recent stories</h2>
-        </div>
+        </div> */}
       </div>
     </>
   );

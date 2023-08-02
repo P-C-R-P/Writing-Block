@@ -63,7 +63,7 @@
   /* border-color: green;
   border-style: solid;
   border-width: 1px; */
-  margin: 2vh 20vw 2vh 20vw;
+  margin: 2vh 20vw 4vh 20vw;
   padding: 5vw;
 }
 
@@ -104,4 +104,18 @@
   border-color: black;
   border-width: 1px;
   padding: 5vh; */
+}
+
+.list-item-1 h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.list-item-1 h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.list-item-1 h3 {
+  font-size: 30px;
 }

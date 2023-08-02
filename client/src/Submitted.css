@@ -5,9 +5,6 @@
     rgba(225, 225, 191, 1) 0%,
     rgba(238, 238, 221, 1) 100%
   );
-  /* border-color: red;
-  border-style: solid;
-  border-width: 1px; */
   width: 100%;
   position: absolute;
   height: 100%;
@@ -25,13 +22,9 @@
   font-size: 40px;
   border-style: none;
   margin: 0vh 0vh 4vw 0vh;
-  /* border-style: solid;
-  border-color: #ffa500;
-  border-width: 1px; */
 }
 
 .filter-options-2 ul {
-
   text-align: center;
   display: flex;
   justify-content: center;
@@ -45,9 +38,6 @@
 }
 
 .list-section-2 {
-  /* border-color: rgba(0, 5, 27, 1);
-  border-style: solid;
-  border-width: 5px 0px 0px 0px; */
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -64,9 +54,6 @@
     rgba(209, 170, 0, 0.4982725512079832) 100%
   );
   border-radius: 10px;
-  /* border-color: green;
-  border-style: solid;
-  border-width: 1px; */
   margin: 2vh 20vw 2vh 20vw;
   padding: 5vh 5vh 5vh 10vh;
 }
@@ -83,10 +70,6 @@
   border-style: none;
   font-size: 30px;
   cursor: pointer;
-  /* border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px; */
 }
 
 .view-2 {
@@ -107,11 +90,6 @@
   border-style: none;
   font-size: 50px;
   cursor: pointer;
-  /* border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  padding: 5vh; */
 }
 
 .view-section {
@@ -120,13 +98,11 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 5vh 5vh 5vh 5vh;
+  padding: 10vh 10vh 10vh 10vh;
   width: 70%;
   height: 70%;
   background-color: rgba(238, 238, 221, 1);
-
   border-style: solid;
-
 }
 
 .view-section h3 {
@@ -142,9 +118,4 @@
   font-size: 50px;
   cursor: pointer;
   transform: rotate(180deg);
-  /* border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  padding: 5vh; */
 }

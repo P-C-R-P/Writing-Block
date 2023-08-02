@@ -2,12 +2,8 @@ import './Saved.css';
 import React, { useState, useEffect } from 'react';
 
 import {
-  BsBookmark,
-  BsBookmarkFill,
-  BsEyeglasses,
   BsTrash2,
-  BsTrash2Fill,
-  BsCheckLg,
+  BsTrash2Fill
 } from 'react-icons/bs';
 import { BiArrowBack } from 'react-icons/bi';
 

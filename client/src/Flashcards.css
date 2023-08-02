@@ -7,16 +7,10 @@
   );
   width: 100%;
   position: absolute;
-  /* border-color: red;
-  border-style: solid;
-  border-width: 1px; */
   z-index: 0;
 }
 
 .flashcard-section {
-  /* border-color: yellow;
-  border-style: solid;
-  border-width: 1px; */
   margin: 15vh 5vw 15vh 5vw;
   display: flex;
   justify-content: center;
@@ -28,19 +22,12 @@
   background-color: transparent;
   font-size: 40px;
   cursor: pointer;
-  /* border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px; */
   padding: 5vh;
 }
 
 .flashcard {
   box-shadow: 10px 10px 10px #62865a;
   position: relative;
-  /* border-color: pink;
-  border-style: solid;
-  border-width: 1px; */
   border-radius: 10px;
   background: linear-gradient(
     335deg,
@@ -69,9 +56,6 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  /* border-color: pink;
-  border-style: solid;
-  border-width: 1px; */
   width: 100%;
   margin: 1vh;
 }
@@ -83,7 +67,6 @@
 }
 
 .tilted-card {
-  /* border-color: purple; */
   position: absolute;
   transform: rotate(6deg);
   z-index: 1;
@@ -101,13 +84,11 @@
 
 .title {
   text-align: center;
-  /* border-style: solid; */
 }
 
 .author {
   padding: 0vh 2vh 0vh 2vh;
   text-align: center;
-  /* border-style: solid; */
 }
 
 .lines-div {
@@ -116,10 +97,8 @@
   align-self: center;
   padding: 0vh 0vh 5vh 2vh;
   width: 50%;
-  /* border-style: solid; */
 }
 .line {
-  /* border-style: solid; */
   margin: 1vh;
   display: flex;
 }

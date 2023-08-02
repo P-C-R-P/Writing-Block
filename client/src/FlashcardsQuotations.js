@@ -2,7 +2,6 @@ import './Flashcards.css';
 import { BiArrowBack } from 'react-icons/bi';
 import React, { useState, useEffect } from 'react';
 import {
-  BsCheckLg,
   BsArrowClockwise,
   BsArrowCounterclockwise,
   BsBookmarkFill,
@@ -46,22 +45,6 @@ function FlashcardsQuotations({ onClose }) {
           console.log(error);
         }
       }
-      // if (hasBookmark) {
-      //   try {
-      //     fetch('http://localhost:3001/prompts', {
-      //       method: 'POST',
-      //       body: JSON.stringify({
-      //         title: 'Story idea',
-      //         text: data,
-      //         author: 'OpenAI',
-      //       }),
-      //       headers: { 'Content-Type': 'application/json' },
-      //     }).then((response) => response.json());
-      //   } catch (error) {
-      //     console.log(error);
-      //   }
-      // delete from database
-      // }
     }
 
   function handleSave() {
@@ -97,9 +80,6 @@ function FlashcardsQuotations({ onClose }) {
             <h2 className="title">{quote}</h2>
             <h3 className="author">{author}</h3>
           </div>
-          {/* <button className="choose-2">
-            <BsCheckLg />
-          </button> */}
         </div>
         <div className="flashcard tilted-card"></div>
         <button onClick={handleRefresh}>

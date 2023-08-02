@@ -4,9 +4,6 @@
     rgba(225, 225, 191, 1) 0%,
     rgba(238, 238, 221, 1) 100%
   );
-  /* border-color: red;
-  border-style: solid;
-  border-width: 1px; */
   display: flex;
   justify-content: space-around;
   height: 95vh;
@@ -17,18 +14,13 @@
 .block-section {
   margin: 4vh 15vh 15vh 15vh;
   padding: 5vh;
-  /* border-color: yellow;
-  border-style: solid;
-  border-width: 1px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .block {
-  /* border-color: green; */
   border-style: none;
-  /* border-width: 1px; */
   border-radius: 5%;
   margin: 2vh;
   padding: 1vw 2vw 1vw 2vw;

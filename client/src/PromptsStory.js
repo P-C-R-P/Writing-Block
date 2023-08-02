@@ -1,13 +1,9 @@
 import './Prompts.css';
-import { BiArrowBack, BiExport } from 'react-icons/bi';
+import { BiArrowBack } from 'react-icons/bi';
 import React, { useState, useEffect } from 'react';
 import {
   BsBookmark,
   BsBookmarkFill,
-  BsCheckLg,
-  BsTypeBold,
-  BsTypeItalic,
-  BsTypeUnderline,
   BsArrowClockwise,
   BsArrowCounterclockwise,
 } from 'react-icons/bs';
@@ -33,24 +29,7 @@ function PromptsStory({ onClose }) {
       } catch (error) {
         console.log(error);
       }
-      // save to database
     }
-    // if (hasBookmark) {
-    //   try {
-    //     fetch('http://localhost:3001/prompts', {
-    //       method: 'POST',
-    //       body: JSON.stringify({
-    //         title: 'Story idea',
-    //         text: data,
-    //         author: 'OpenAI',
-    //       }),
-    //       headers: { 'Content-Type': 'application/json' },
-    //     }).then((response) => response.json());
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-      // delete from database
-    // }
   }
 
   function handleSave() {
@@ -95,9 +74,6 @@ function PromptsStory({ onClose }) {
               {hasBookmark ? <BsBookmarkFill /> : <BsBookmark />}
             </button>
             <h2>{data}</h2>
-            {/* <button className="choose-1">
-              <BsCheckLg />
-            </button> */}
           </div>
         </div>
         <button onClick={handleRefresh}>
@@ -106,19 +82,7 @@ function PromptsStory({ onClose }) {
       </div>
       <div className="text-section">
         <div className="text-area">
-          {/* <div className="text-buttons">
-            <button className="bold">
-              <BsTypeBold className="bold" />
-            </button>
-            <button>
-              <BsTypeItalic className="italics" />
-            </button>
-            <button className="underline">
-              <BsTypeUnderline />
-            </button>
-          </div> */}
           <Editor />
-          {/* <textarea maxlength="5000"></textarea> */}
         </div>
       </div>
       <button onClick={handleClose}>

@@ -4,9 +4,6 @@
     rgba(225, 225, 191, 1) 0%,
     rgba(238, 238, 221, 1) 100%
   );
-  /* border-color: red;
-  border-style: solid;
-  border-width: 1px; */
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -23,9 +20,6 @@
 .header-section-1 h2 {
   text-align: center;
   font-size: 40px;
-  /* border-style: solid;
-  border-color: orange;
-  border-width: 1px; */
 }
 
 .filter-options-1 ul {
@@ -41,9 +35,6 @@
 }
 
 .list-section-1 {
-  /* border-color: pink;
-  border-style: solid;
-  border-width: 1px; */
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -60,9 +51,6 @@
     rgba(94, 124, 255, 1) 0%,
     rgba(94, 124, 255, 0.5) 100%
   );
-  /* border-color: green;
-  border-style: solid;
-  border-width: 1px; */
   margin: 2vh 20vw 4vh 20vw;
   padding: 5vw;
 }
@@ -99,11 +87,6 @@
   border-style: none;
   font-size: 50px;
   cursor: pointer;
-  /* border-radius: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  padding: 5vh; */
 }
 
 .list-item-1 h5 {

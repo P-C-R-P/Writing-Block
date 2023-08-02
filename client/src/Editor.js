@@ -79,10 +79,8 @@ function Editor() {
     if (quill) {
       quill.on('text-change', () => {
         setValue(quillRef.current.firstChild.innerHTML);
-        // const data = quillRef.current.firstChild.innerHTML;
         const length = quill.getLength() - 1;
         setDataLength(length);
-        // const dataStringified = JSON.stringify(data);
         if (length > 5000) {
           quill.deleteText(5000, quill.getLength());
         }
@@ -113,7 +111,6 @@ function Editor() {
           </button>
           <h3>{dataLength} / 5000</h3>
         </div>
-        {/* <button className="test" onClick={handleExport}></button> */}
       </div>
       <div className="options-section">
         <div className="options">

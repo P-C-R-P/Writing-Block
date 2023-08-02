@@ -42,7 +42,7 @@ function Home() {
     const button = event.currentTarget.parentElement;
     button.click();
   }
-  function handleClose(event) {
+  function handleClose() {
     setIsPromptsStoryShown(false);
     setIsPromptsSentenceShown(false);
     setIsFlashcardsPoetryShown(false);
@@ -98,9 +98,6 @@ function Home() {
             <h2 onClick={handleTextClick}>View submitted work</h2>
           </button>
         </div>
-        {/* <div className="side-menu-section">
-          <h2>Recent stories</h2>
-        </div> */}
       </div>
     </>
   );

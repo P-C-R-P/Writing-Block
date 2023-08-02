@@ -143,13 +143,6 @@
   cursor: pointer;
 }
 
-/* .test {
-  background-color: aqua;
-  z-index: 4;
-  padding: 5vh;
-  position:fixed;
-} */
-
 .options-section {
   display: flex;
   justify-content: flex-end;
@@ -157,13 +150,8 @@
 
 .options-section button {
   margin: 10vh 4vw 0vw 2vw;
-  /* position: absolute; */
   border-style: none;
   background-color: transparent;
   font-size: 25px;
   cursor: pointer;
-  /* border-radius: 100%;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px; */
 }

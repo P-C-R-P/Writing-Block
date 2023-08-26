@@ -8,7 +8,7 @@ This application gives users access to 4 sources of inspiration, 4 different kin
 
 Try out Writing Block as a solution to your writer’s block.
 
-[Demonstration](https://www.youtube.com/watch?v=PfDDQY3-J8s)
+[Video Demonstration](https://www.youtube.com/watch?v=PfDDQY3-J8s)
 
 ## User interface
 

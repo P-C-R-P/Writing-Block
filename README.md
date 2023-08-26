@@ -60,12 +60,6 @@ Try out Writing Block as a solution to your writer’s block.
 
 - OpenAI Key
 
-### Root
-
-```
-npm i
-```
-
 ### Server
 ```
 cd server

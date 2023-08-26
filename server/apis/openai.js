@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.OPEN_AI_KEY;
 const API_URL = 'https://api.openai.com/v1/completions';
 
 async function fetchSentence() {

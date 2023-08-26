@@ -103,7 +103,7 @@ function Editor() {
             'border-style': 'none',
           }}
         >
-          <div scrollableContainer="true" ref={quillRef}></div>
+          <div /*scrollableContainer="true"*/ ref={quillRef}></div>
         </div>
         <div className="words">
           <button onClick={handleTypewriter} className="typewriter">

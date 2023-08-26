@@ -8,6 +8,7 @@ import {
   BsBookmark,
 } from 'react-icons/bs';
 
+// eslint-disable-next-line react/prop-types
 function FlashcardsQuotations({ onClose }) {
   const [hasBookmark, setHasBookmark] = useState(false);
   const [quote, setQuote] = useState([]);

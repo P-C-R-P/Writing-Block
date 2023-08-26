@@ -3,6 +3,7 @@ import { BsEyeglasses } from 'react-icons/bs';
 import { BiArrowBack } from 'react-icons/bi';
 import React, { useState, useEffect } from 'react';
 
+// eslint-disable-next-line react/prop-types
 function Submitted({ onClose }) {
   const [submissions, setSubmissions] = useState([]);
   const [isViewed, setIsViewed] = useState(false);

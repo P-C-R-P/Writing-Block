@@ -15,43 +15,43 @@ Try out Writing Block as a solution to your writer’s block.
 ### Homepage
 
 <figure>
-    <img alt="homepage" width="1000vw" src="images/homepage.png"/>
+    <img alt="homepage" width="1000vw" src="assets/screenshots/homepage.png"/>
 </figure>
 
 ### Generate a first sentence
 
 <figure>
-    <img alt="first sentence" width="1000vw" src="images/first-sentence.png"/>
+    <img alt="first sentence" width="1000vw" src="assets/screenshots/first-sentence.png"/>
 </figure>
 
 ### Generate a story idea
 
 <figure>
-    <img alt="story idea" width="1000vw" src="images/story-idea.png"/>
+    <img alt="story idea" width="1000vw" src="assets/screenshots/story-idea.png"/>
 </figure>
 
 ### Poetry flashcards
 
 <figure>
-    <img alt="poetry flashcards" width="1000vw" src="images/poetry-flashcards.png"/>
+    <img alt="poetry flashcards" width="1000vw" src="assets/screenshots/poetry-flashcards.png"/>
 </figure>
 
 ### Quotation flashcards
 
 <figure>
-    <img alt="quotation flashcards" width="1000vw" src="images/quotation-flashcards.png"/>
+    <img alt="quotation flashcards" width="1000vw" src="assets/screenshots/quotation-flashcards.png"/>
 </figure>
 
 ### View saved prompts
 
 <figure>
-    <img alt="saved prompts" width="1000vw" src="images/saved-prompts.png"/>
+    <img alt="saved prompts" width="1000vw" src="assets/screenshots/saved-prompts.png"/>
 </figure>
 
 ### View submitted work
 
 <figure>
-    <img alt="submitted work" width="1000vw" src="images/submitted-work.png"/>
+    <img alt="submitted work" width="1000vw" src="assets/screenshots/submitted-work.png"/>
 </figure>
 
 ## Getting started
@@ -109,3 +109,9 @@ I’ve chosen technologies that effectively allow me to bring this creative writ
 ## Contributors
 
 - [Philippa Payne](https://github.com/P-C-R-P)
+
+
+## Sources
+
+- [Typewriter sounds by BMacZero](https://freesound.org/people/BMacZero/sounds/160678/)
+- [Typewriter ding by stubb](https://freesound.org/people/_stubb/sounds/406243/)

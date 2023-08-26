@@ -7,6 +7,7 @@ import {
 } from 'react-icons/bs';
 import { BiArrowBack } from 'react-icons/bi';
 
+// eslint-disable-next-line react/prop-types
 function Saved({ onClose }) {
   const [binHovered, setBinHover] = useState(false);
   const [prompts, setPrompts] = useState([]);

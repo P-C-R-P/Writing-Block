@@ -9,6 +9,7 @@ import {
 } from 'react-icons/bs';
 import Editor from './Editor';
 
+// eslint-disable-next-line react/prop-types
 function PromptsStory({ onClose }) {
   const [hasBookmark, setHasBookmark] = useState(false);
   const [data, setData] = useState([]);
